@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designing Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 20%;
+            padding: 10px;
+            font-size: 16px;
+            transition: margin-left 0.3s ease; /* Smooth transition when moving input */
+        }
+
+        /* Wrap the number and question inside a span */
+        .question-container {
+            position: relative; /* Positioning relative to keep layout intact */
+            display: inline-block; /* Keeps it inline with the text */
+            cursor: pointer;
+        }
+
+        /* Initially hide the question text */
+        .question-container .question-number {
+            font-weight: bold;
+        }
+
+        /* Tooltip style for the question text */
+        .question-container .question-text {
+            visibility: hidden;
+            position: absolute;
+            left: 110%; /* Position it to the right of the number */
+            top: 0;
+            padding-left: 10px;
+            font-weight: normal;
+            color: #333;
+            white-space: nowrap;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: visibility 0.3s ease;
+        }
+
+        /* On hover, show the question */
+        .question-container:hover .question-text {
+            visibility: visible;
+        }
+
+        /* Move the input field to the right when hovering the question number */
+        .question-container:hover ~ input {
+            position: relative;
+            bottom: 35px;
+            margin-left: 50rem; /* Moves the input to the end */
+        }
+    </style>
+</head>
+<body>
+    <!-- Print Button -->
+    <!-- <button class="no-print" onclick="printPage()">Print this page</button> -->
+
+    <header>
+        <h1 class="questTitle">Web Development Question</h1>
+    </header>
+
+    <section style="font-weight: 900;text-align: center;">
+       HTML
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">1)</span>
+                <span class="question-text">List some new tags in HTML5?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">2)</span>
+                <span class="question-text">Difference between class and id?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">3)</span>
+                <span class="question-text">Difference between get and post?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">4)</span>
+                <span class="question-text">What is the purpose of the alt attribute on images?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">5)</span>
+                <span class="question-text">Difference between < link > and < a > tags?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section style="font-weight: 900;text-align: center;">
+       CSS
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">6)</span>
+                <span class="question-text">What are pseudo-classes and pseudo-elements? Give examples.</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+        <!-- 
+        pseudo-classes
+             a:hover {
+            color: red;
+            }
+
+            input:focus {
+            border-color: blue;
+            }
+
+            li:first-child {
+            font-weight: bold;
+            }
+
+            pseudo-element
+            p::first-line {
+            color: green;
+            }
+
+            h1::before {
+            content: "hii" ";
+            }
+
+            h1::after {
+            content: "goodbye";
+            }
+
+            Pseudo-class = changes the state (hover, focus, visited)
+            Pseudo-element = targets a part (first-line, before, after)
+        -->
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">7)</span>
+                <span class="question-text">How is visibility: hidden different from display: none?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>    
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">8)</span>
+                <span class="question-text">What is the Box Model in CSS?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section> 
+    
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">9)</span>
+                <span class="question-text">How would you implement a CSS transition or animation?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>   
+    
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">10)</span>
+                <span class="question-text">How do z-index values work in CSS stacking context?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>    
+
+    <section style="font-weight: 900;text-align: center;">
+        Javascript
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">11)</span>
+                <span class="question-text">Is javascript synchronous or asynchronous concurrent language?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">12)</span>
+                <span class="question-text">Difference between null and undefined?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+        <!-- 
+        let a;
+        console.log(a) // undefined
+
+        let b=null;
+        console.log(b) // null
+        -->
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">13)</span>
+                <span class="question-text">What is hoisting in JavaScript?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">14)</span>
+                <span class="question-text">Difference between .innerHTML() & .innerText() in js?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">15)</span>
+                <span class="question-text">Difference between Event bubbling & Event Deligation?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section style="font-weight: 900;text-align: center;">
+        Jquery
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">16)</span>
+                <span class="question-text">How do you chain multiple jQuery methods together?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">17)</span>
+                <span class="question-text">How would you animate an element using jQuery?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">18)</span>
+                <span class="question-text">How can you stop a running animation in jQuery?</span>
+            </span>
+            <!-- 
+            <div id="element">Hello</div>
+            <button id="stopButton">Stop</button>
+            <script>
+                $('#element').animate({left: '500px'}, 2000);
+                
+                $('#stopButton').click(function() {
+                    $('#element').stop(); 
+                });
+            </script>
+            
+            -->
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">19)</span>
+                <span class="question-text">How do you handle events in jQuery (like click, hover)?</span>
+                <!-- 
+                $(document).ready(function() {
+                $(".btn").click(function() {
+                    alert("Button clicked!");
+                    });
+                });
+
+                $(document).ready(function() {
+                $(".box").hover(
+                    function() {
+                        // Mouse enter
+                        $(this).css("background-color", "yellow");
+                    },
+                    function() {
+                        // Mouse leave
+                        $(this).css("background-color", "white");
+                    }
+                );
+            });
+
+                
+                -->
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">20)</span>
+                <span class="question-text">What is the purpose of $(this) in jQuery?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+        <!-- 
+        <button class="btn">Click me!</button>
+        <button class="btn">Click me too!</button>
+
+        <script>
+        $(".btn").click(function() {
+            $(this).text("You clicked me!");
+        });
+        </script>
+        -->
+    </section>
+
+    <section style="font-weight: 900;text-align: center;">
+        Bootstrap
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">21)</span>
+                <span class="question-text">What are Bootstrap breakpoints and how do they work?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">22)</span>
+                <span class="question-text">How can you align items vertically and horizontally in Bootstrap Flexbox utilities?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">23)</span>
+                <span class="question-text">How would you create a modal in Bootstrap?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">24)</span>
+                <span class="question-text">How can you override Bootstrap's default styles?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">25)</span>
+                <span class="question-text">What is the purpose of row and why should columns be placed inside it?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section style="font-weight: 900;text-align: center;">
+        Reactjs
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">26)</span>
+                <span class="question-text">What is the difference between functional and class components?</span>
+            </span>
+            <!-- 
+
+            function Welcome(props) {
+                return <h1>Hello, {props.name}</h1>;
+            }
+
+            import React, { Component } from 'react';
+
+            class Welcome extends Component {
+            render() {
+                return <h1>Hello, {this.props.name}</h1>;
+            }
+            }
+
+            
+            
+            -->
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">27)</span>
+                <span class="question-text">What are React Hooks? Name a few commonly used hooks?</span>
+            </span>
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">28)</span>
+                <span class="question-text">Props and state in reactjs?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">29)</span>
+                <span class="question-text">HOC in reactjs?</span>
+            </span>
+
+            <!-- 
+
+            // Simple HOC
+                function addMessage(Component) {
+                return function NewComponent(props) {
+                    return (
+                    <div>
+                        <h2>Hello from HOC!</h2>
+                        <Component {...props} />
+                    </div>
+                    );
+                };
+                }
+
+                // Basic Component
+                function Message() {
+                return <p>This is my original component.</p>;
+                }
+
+                // Wrap the component
+                const FinalMessage = addMessage(Message);
+
+                // Export
+                export default FinalMessage;
+
+            
+            
+            -->
+            <input type="text" placeholder="namrata">
+        </h2>
+    </section>
+
+    <section>
+        <h2>
+            <span class="question-container">
+                <span class="question-number">30)</span>
+                <span class="question-text">What is JSX? Why do we use it in React?</span>
+            </span>
+            <input type="text" placeholder="sohan">
+        </h2>
+    </section>
+</body>
+</html>
